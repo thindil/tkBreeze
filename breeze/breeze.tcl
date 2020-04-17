@@ -127,13 +127,13 @@ namespace eval ttk::theme::breeze {
             ] -border 3 -sticky news
 
         ttk::style element create Checkbutton.indicator image [list $I(checkbox-unchecked) \
-                disabled            $I(checkbox-unchecked-insensitive) \
                 {pressed selected}  $I(checkbox-checked-pressed) \
                 {active selected}   $I(checkbox-checked-active) \
                 {pressed !selected} $I(checkbox-unchecked-pressed) \
                 active              $I(checkbox-unchecked-active) \
                 selected            $I(checkbox-checked) \
                 {disabled selected} $I(checkbox-checked-insensitive) \
+                disabled            $I(checkbox-unchecked-insensitive) \
             ] -width 22 -sticky w
 
         ttk::style element create Radiobutton.indicator image [list $I(radio-unchecked) \
@@ -319,6 +319,9 @@ namespace eval ttk::theme::breeze {
         # Treeview
         ttk::style configure Treeview -background white
         ttk::style configure Treeview.Item -padding {2 0 0 0}
+        ttk::style map Treeview \
+            -background [list selected $colors(-selectbg)] \
+            -foreground [list selected $colors(-selectfg)]
         
         # Some defaults for non ttk-widgets so that they fit
         # to the Breeze theme, too
