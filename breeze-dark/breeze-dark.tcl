@@ -16,8 +16,8 @@ namespace eval ttk::theme::breeze-dark {
         -bg             "#31363b"
         -fg             "#eff0f1"
         
-        -disabledbg     "#bbcbbe"
-        -disabledfg     "#e7e8ea"
+        -disabledbg     "#4d4d4d"
+        -disabledfg     "#7f8c8d"
         
         -selectbg       "#3daee9"
         -selectfg       "white"
@@ -125,13 +125,13 @@ namespace eval ttk::theme::breeze-dark {
             ] -border 3 -sticky news
 
         ttk::style element create Checkbutton.indicator image [list $I(checkbox-unchecked) \
-                disabled            $I(checkbox-unchecked-insensitive) \
                 {pressed selected}  $I(checkbox-checked-pressed) \
                 {active selected}   $I(checkbox-checked-active) \
                 {pressed !selected} $I(checkbox-unchecked-pressed) \
                 active              $I(checkbox-unchecked-active) \
                 selected            $I(checkbox-checked) \
                 {disabled selected} $I(checkbox-checked-insensitive) \
+                disabled            $I(checkbox-unchecked-insensitive) \
             ] -width 22 -sticky w
 
         ttk::style element create Radiobutton.indicator image [list $I(radio-unchecked) \
