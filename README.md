@@ -6,8 +6,11 @@ These are Tk version of KDE Breeze and Breeze Dark themes.
 
   https://github.com/MaxPerl/ttk-Breeze
 
-  This version have only minor changes in names of directories and some small
-  bugfixes
+    Changes:
+
+    - Names of directories
+    - Small bugfixes
+    - Changed font to the default Tk font
 
 * Breeze Dark version which was created from the theme above by me
 
