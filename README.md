@@ -11,6 +11,7 @@ These are Tk version of KDE Breeze and Breeze Dark themes.
     - Names of directories
     - Small bugfixes
     - Changed font to the default Tk font
+    - Added possibility to move scrollbars with mouse wheel
 
 * Breeze Dark version which was created from the theme above by me
 
