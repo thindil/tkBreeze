@@ -3,6 +3,7 @@
 # Breeze pixmap theme for the ttk package.
 #
 #  Copyright (c) 2018 Maximilian Lika
+#  Copyright (c) 2020 Bartek thindil Jasicki
 
 package require Tk 8.6.0
 
@@ -16,8 +17,6 @@ namespace eval ttk::theme::breeze {
         -fg             "#31363b"
         -bg             "#eff0f1"
         
-        #-disabledbg     "#e3e5e6"
-        #-disabledfg     "#a8a9aa"
         -disabledfg     "#bbcbbe"
         -disabledbg     "#e7e8ea"
         
@@ -255,7 +254,6 @@ namespace eval ttk::theme::breeze {
             ] -padding {12 4 12 4} -border 2
 
             
-        # TODO Enhance
         ttk::style element create Horizontal.Progressbar.trough \
             image $I(scrollbar-trough-horiz-active) -border {6 0 6 0} -sticky ew
         ttk::style element create Horizontal.Progressbar.pbar \
@@ -266,7 +264,6 @@ namespace eval ttk::theme::breeze {
         ttk::style element create Vertical.Progressbar.pbar \
             image $I(scrollbar-slider-vert) -border {0 6 0 6} -sticky ns
 
-        # TODO: Ab hier noch teilweise Arc style
         ttk::style element create Treeview.field \
             image $I(treeview) -border 1
         ttk::style element create Treeheading.cell \
@@ -289,7 +286,6 @@ namespace eval ttk::theme::breeze {
         ttk::style element create vsash image $I(transparent) -sticky e -padding 1 -width 1
 	    ttk::style element create hsash image $I(transparent) -sticky n -padding 1 -width 1
 
-        #ttk::style element create Separator.separator image $I()
 
         #
         # Settings:
@@ -302,7 +298,6 @@ namespace eval ttk::theme::breeze {
         ttk::style configure TRadiobutton -padding 4
         ttk::style configure TSeparator -background $colors(-bg)
 
-        #ttk::style configure TPanedwindow -width 1 -padding 0
         ttk::style map TPanedwindow -background [list hover $colors(-checklight)]
         ttk::style map TCombobox -selectbackground [list \
             !focus         $colors(-window) \
