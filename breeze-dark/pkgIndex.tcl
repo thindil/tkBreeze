@@ -1,4 +1,4 @@
-# pkgIndex.tcl for additional tile pixmap theme Arc.
+# pkgIndex.tcl for additional tile pixmap theme tkBreeze-dark.
 #
 # We don't provide the package is the image subdirectory isn't present,
 # or we don't have the right version of Tcl/Tk

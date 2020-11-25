@@ -264,7 +264,6 @@ namespace eval ttk::theme::breeze-dark {
         ttk::style element create Vertical.Progressbar.pbar \
             image $I(scrollbar-slider-vert) -border {0 6 0 6} -sticky ns
 
-        # TODO: Ab hier noch teilweise Arc style
         ttk::style element create Treeview.field \
             image $I(treeview) -border 1
         ttk::style element create Treeheading.cell \
@@ -283,8 +282,6 @@ namespace eval ttk::theme::breeze-dark {
                 ] \
             -width 15 -sticky w
             
-        #ttk::style element create Separator.separator image $I()
-
         #
         # Settings:
         #
@@ -297,7 +294,6 @@ namespace eval ttk::theme::breeze-dark {
         ttk::style configure TSeparator -background $colors(-bg)
         ttk::style configure TEntry -insertcolor $colors(-fg)
 
-        #ttk::style configure TPanedwindow -width 1 -padding 0
         ttk::style map TPanedwindow -background [list hover $colors(-checklight)]
         ttk::style map TCombobox -selectbackground [list \
             !focus         $colors(-window) \
@@ -330,7 +326,7 @@ namespace eval ttk::theme::breeze-dark {
         }
 
         # Some defaults for non ttk-widgets so that they fit
-        # to the Breeze theme, too
+        # to the Breeze-dark theme, too
         tk_setPalette background [ttk::style lookup . -background] \
         	foreground [ttk::style lookup . -foreground] \
         	highlightColor [ttk::style lookup . -focuscolor] \
