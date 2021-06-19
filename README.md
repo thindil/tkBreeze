@@ -24,7 +24,7 @@ These are Tk version of KDE Breeze and Breeze Dark themes.
    if you put both themes in */home/user/themes* directory, *TCLLIBPATH* must
    be set on `/home/user/themes`.
 3. If you want to use only one of themes: set your environment variable
-   *TCLIBPATH* to theme directory. For example, if you want to use only Breeze
+   *TCLLIBPATH* to theme directory. For example, if you want to use only Breeze
    theme and you put it in */home/user/.themes/* directory, *TCLLIBPATH* must
    be set on `/home/user/.themes/breeze`.
 4. Edit (or create) your *.Xresources* file and add line:
